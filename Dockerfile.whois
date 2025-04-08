@@ -1,0 +1,11 @@
+# Dockerfile.whois
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements-whois.txt .
+RUN pip install --no-cache-dir -r requirements-whois.txt
+
+COPY whois_api.py .
+
+CMD ["uvicorn", "whois_api:app", "--host", "0.0.0.0", "--port", "8001"]
