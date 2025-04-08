@@ -6,7 +6,8 @@ itu-sgmyo-virtualization-2025
 cd working-directory/ && pip3 install -r requirements.txt && python3 -m uvicorn main:app --reload --port 8000
 pip3 install -r requirements.txt && python3 -m uvicorn main:app --reload --port 8002
 ```
-#Or you can just start container with;
+# Or you can just start container with;
+
 '''bash
 docker-compose up --build
 '''
