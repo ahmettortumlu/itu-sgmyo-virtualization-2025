@@ -1,3 +1,8 @@
+# While running application:  
+# export S3_BUCKET=my-ssl-bucket
+# python ssl_lookup_api.py
+
+
 import os
 import ssl
 import socket
